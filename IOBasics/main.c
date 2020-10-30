@@ -76,7 +76,7 @@ int main(void) {
     */
 
    // fprintf(stdout,"This example writes to the console using stdout\n");
-   // fprintf(stdout,"This example writes to the console using stderr\n");
+   // fprintf(stderr,"This example writes to the console using stderr\n");
 
    return 0;
 }
