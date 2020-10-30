@@ -18,8 +18,9 @@ myprog: main.o
 	$(CC) $(CFLAGS) $^ -o $@ 
 
 
-test:
-	./myprog
+memtest: myprog
+	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes ./myprog
+
 
 clean:
 	rm -f *.o *.d a.out myprog mytests main

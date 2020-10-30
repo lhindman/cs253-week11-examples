@@ -1,9 +1,8 @@
 /*
  * Author: Luke Hindman
  * Date: Fri 30 Oct 2020 11:16:04 AM PDT
- * Description: Implementation of the TokenArray example in C. I was going to 
- *    call it WordList, but the tokens are not necessarily words and the array
- *    is not a list! :)cd 
+ * Description: This example demonstrates how to read sample data from
+ *    a file as well as how to dynamically grow an array.
  */
 #include <stdio.h>
 #include <errno.h>
@@ -112,6 +111,11 @@ int main(void) {
       sum += sampleArray[i];
    }
    fprintf(resultFile,"Average sample value: %0.2f\n", (double)sum/sampleCount);
+
+   fclose(resultFile);
+
+   /* Data Cleanup */
+   free(sampleArray);
 
    return 0;
 }

@@ -99,6 +99,7 @@ int main(void) {
       fprintf(stderr,"ERROR: An error occurred while restoring GameState from disk!\n");
    }
 
+   fclose(savedGameState);
    
 
 
