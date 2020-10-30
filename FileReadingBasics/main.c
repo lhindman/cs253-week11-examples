@@ -28,10 +28,11 @@ int main(void) {
    size_t bufferSize = 80;
    char buffer[bufferSize];
 
-   errno = 0;
+   
    memset(buffer,0,bufferSize); /* Clear the buffer by filling it with zeros */
-
    fprintf(stdout,"Reading line using fscanf()\n");
+   
+   errno = 0;
    int rc = fscanf(mydoc,"%79[^\n]",buffer);
    if ( rc > 0) {
       fprintf(stdout,"Successfully read from file: %s\n", buffer);
@@ -50,7 +51,7 @@ int main(void) {
    memset(buffer,0,bufferSize); /* Clear the buffer by filling it with zeros */
 
    fprintf(stdout,"Reading line using fgets()\n");
-   char * result = fgets(buffer, 80, mydoc);
+   char * result = fgets(buffer, bufferSize, mydoc);
    if ( result != NULL) {
       fprintf(stdout,"Successfully read from file: %s\n", buffer);
    } else {
