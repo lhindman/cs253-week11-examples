@@ -15,8 +15,9 @@ struct game_state {
 typedef struct game_state GameState;
 
 void printGameState(GameState gs) {
-   fprintf(stdout,"Player Name: %s\n", gs.playerName);
-   fprintf(stdout,"Moves Made: %d\n", gs.numMoves);
+   fprintf(stdout,"-----------------------\n");
+   fprintf(stdout," Player Name: %s\n", gs.playerName);
+   fprintf(stdout," Moves Made: %d\n", gs.numMoves);
    fprintf(stdout,"----- Game Board ------\n");
 
    for (int i = 0; i < BOARD_DIM; i++) {
