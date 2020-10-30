@@ -1,24 +1,27 @@
 {
 	"folders": [
 		{
-			"path": "IO Basics"
+			"name": "IO Basics",
+			"path": "IOBasics"
 		},
 		{
-			"path": "File Basics"
+			"name": "File Reading Basics",
+			"path": "FileReadingBasics"
 		},
 		{
-			"path": "CSVParser"
-		},
-		{
+			"name": "File Writing Basics",
 			"path": "FileWritingBasics"
 		},
 		{
+			"name": "Binary Data",
 			"path": "BinaryData"
 		},
 		{
-			"path": "TokenArray"
+			"name": "CSV Parser",
+			"path": "CSVParser"
 		},
 		{
+			"name": "Sample Data Processing",
 			"path": "SampleDataProcessing"
 		}
 	],
