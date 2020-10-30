@@ -5,3 +5,5 @@ mytests
 *.d
 *.swp
 
+
+BinaryData/gamesave.dat
