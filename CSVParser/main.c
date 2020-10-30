@@ -9,6 +9,7 @@
 
 int main(void) {
 
+   errno = 0;
    FILE * dataFile = fopen("jimmy_buffett-collection.csv", "r");
 
    /* Validate the file stream was opened successfully */
