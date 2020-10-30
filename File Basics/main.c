@@ -62,5 +62,6 @@ int main(void) {
    }
    fprintf(stdout, "\n-----------End Of File-------------\n");
 
+   fclose(mydoc);
    return 0;
 }

@@ -40,6 +40,7 @@ int main(void) {
       
    }
 
+   fclose(mydoc);
    
 
    return 0;
