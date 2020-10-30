@@ -10,13 +10,16 @@
 			"path": "CSVParser"
 		},
 		{
-			"path": "WordList"
-		},
-		{
 			"path": "FileWritingBasics"
 		},
 		{
 			"path": "BinaryData"
+		},
+		{
+			"path": "TokenArray"
+		},
+		{
+			"path": "SampleDataProcessing"
 		}
 	],
 	"settings": {
