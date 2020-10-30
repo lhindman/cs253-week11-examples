@@ -28,7 +28,6 @@ void printGameState(GameState gs) {
    }
 }
 
-
 int main(void) {
 
    srand(time(0));
@@ -66,6 +65,7 @@ int main(void) {
    itemCount = fwrite(&theGame,sizeof(GameState),1,savedGameState);
    fflush(savedGameState);
    fclose(savedGameState);
+   
    if(itemCount == 1) {
       fprintf(stdout,"The GameState was successfully saved to disk\n");
    } else {
