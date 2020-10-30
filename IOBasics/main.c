@@ -1,3 +1,8 @@
+/* 
+ * Author: Luke Hindman
+ * Date: Fri 30 Oct 2020 12:59:40 PM PDT
+ * Description: Example created for I/O Lecture
+ */
 #include <stdio.h>
 #include <unistd.h>
 
