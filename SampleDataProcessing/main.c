@@ -52,6 +52,7 @@ int * growArray(int * array, int current_length, int new_length) {
 
 int main(void) {
 
+   errno = 0;
    FILE * dataFile = fopen("temperature_samples.txt", "r");
 
    /* Validate the file stream was opened successfully */
@@ -97,6 +98,7 @@ int main(void) {
 
 
    /* Post Processing */
+   errno = 0;
    FILE * resultFile = fopen("results.txt", "w");
 
    /* Validate the file stream was opened successfully */
